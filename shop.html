@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <title>Каталог Барбершопа «Бородинский»</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- Шапка -->
+   <header>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
+      <div class="container">
+         <nav>
+            <a>
+               <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+            </a>
+            <ul>
+               <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+               <li><a href="news.html">НОВОСТИ</a></li>
+               <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+               <li><a href="item.html">МАГАЗИН</a></li>
+               <li><a href="contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+            <ul>
+               <li><a href="#">ВХОД</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!-- Основной Контент -->
+   <main>
+      <section>
+         <h2>СРЕДСТВА ДЛЯ УХОДА</h2>
+         <!-- Навигация -->
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html">ГЛАВНАЯ</a>
+               </li>
+               <li>
+                  <a href="shop.html">МАГАЗИН</a>
+               </li>
+               <li>
+                  <a href="">СРЕДСТВА ДЛЯ УХОДА</a>
+               </li>
+            </ul>
+         </nav>
+      </section>
+
+      <!-- Каталог и фильтр товаров -->
+      <section>
+         <!-- Фильтр -->
+         <section>
+            <h3 class="visually-hidden">Фильтр товаров</h3>
+            <form action="https://echo.htmlacademy.ru" method="post">
+               <!-- Производители -->
+               <fieldset>
+                  <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                  <ul>
+                     <li>
+                        <label>
+                           Baxter of California
+                           <input type="checkbox" name="Baxter of California" checked>
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Mr Natty
+                           <input type="checkbox" name="Mr Natty">
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Suavecito
+                           <input type="checkbox" name="Suavecito" checked>
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Malin+Goetz
+                           <input type="checkbox" name="Malin+Goetz">
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Murray’s
+                           <input type="checkbox" name="Murray’s">
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           American Crew
+                           <input type="checkbox" name="American Crew" checked>
+                        </label>
+                     </li>
+                  </ul>
+               </fieldset>
+
+               <!-- Группа товаров -->
+               <fieldset>
+                  <legend>ГРУППЫ ТОВАРОВ:</legend>
+                  <ul>
+                     <li>
+                        <label>
+                           Бритвенные<br> принадлежности
+                           <input type="radio" name="product-group" value="shaving">
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Средства для ухода
+                           <input type="radio" name="product-group" value="hair-care" checked>
+                        </label>
+                     </li>
+                     <li>
+                        <label>
+                           Аксессуары
+                           <input type="radio" name="product-group" value="accessories">
+                        </label>
+                     </li>
+                  </ul>
+               </fieldset>
+               <button type="submit">Показать</button>
+            </form>
+         </section>
+
+         <!-- Каталог -->
+         <section>
+            <h3 class="visually-hidden">Каталог товаров</h3>
+         </section>
+      </section>
+   </main>
+
+   <!-- Подвал -->
+   <footer>
+      <div class="container footer-container">
+         <div>
+            <p>
+               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+            </p>
+            <a href="">КАК НАС НАЙТИ?</a>
+            <a href="tel:+74956660266">ТЕЛЕФОН: +7 (495) 666-02-66</a>
+         </div>
+
+         <div>
+            <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
+            <ul>
+               <li>
+                  <a href="" aria-label="ВКонтакте">
+                     <<-Вставить svg код позже->>
+                  </a>
+               </li>
+               <li>
+                  <a href="" aria-label="Фейсбук">
+                     <<-Вставить svg код позже->>
+                  </a>
+               </li>
+               <li>
+                  <a href="" aria-label="Инстаграм">
+                     <<-Вставить svg код позже->>
+                  </a>
+               </li>
+            </ul>
+         </div>
+
+         <div>
+            <span>РАЗРАБОТАНО:</span>
+            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

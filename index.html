@@ -11,20 +11,21 @@
 
    <!-- Шапка -->
    <header>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
       <div class="container">
          <nav>
             <a>
-               <img src="svg/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+               <img src="svg/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
             </a>
             <ul>
-               <li><a>ИНФОРМАЦИЯ</a></li>
-               <li><a>НОВОСТИ</a></li>
-               <li><a>ПРАЙС-ЛИСТ</a></li>
-               <li><a>МАГАЗИН</a></li>
-               <li><a>КОНТАКТЫ</a></li>
+               <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+               <li><a href="news.html">НОВОСТИ</a></li>
+               <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+               <li><a href="item.html">МАГАЗИН</a></li>
+               <li><a href="contacts.html">КОНТАКТЫ</a></li>
             </ul>
             <ul>
-               <li><button type="button">ВХОД</button></li>
+               <li><a href="#">ВХОД</a></li>
             </ul>
          </nav>
       </div>
@@ -32,33 +33,41 @@
 
    <!-- Основной Контент -->
    <main>
-      <h1></h1>
+      <h1 class="visually-hidden">Главная страница Барбершопа «Бородинский»</h1>
       <div class="container">
 
          <!-- Преимущества -->
          <section>
+            <h2 class="visually-hidden">Наши Преимущества</h2>
             <ul>
                <li>
                   <h3>БЫСТРО</h3>
-                  <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
-                     СТРИЖКИ-МИНУТКИ!</p>
+                  <p>
+                     МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
+                     СТРИЖКИ-МИНУТКИ!
+                  </p>
                </li>
                <li>
                   <h3>КРУТО</h3>
-                  <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                  <p>
+                     ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
                      МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
-                     ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+                     ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                  </p>
                </li>
                <li>
                   <h3>ДОРОГО</h3>
-                  <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ
-                     ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+                  <p>
+                     НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ
+                     ОПРЕДЕЛЕНЫЙ СТАТУС?
+                  </p>
                </li>
             </ul>
          </section>
 
          <!-- Новости и Галерея -->
          <div class="content-container">
+            <h2 class="visually-hidden">Новости и Галерея</h2>
             <section>
                <h3>НОВОСТИ</h3>
                <ul>
@@ -78,15 +87,20 @@
             <section>
                <h3>ФОТОГАЛЕРЕЯ</h3>
                <figure>
-                  <a href=""><img src="" alt=""></a>
+                  <a href="">
+                     <img src="img/interier.jpg" width="286" height="164" alt="Интерьер салона Барбершоп «Бородинский»">
+                  </a>
                </figure>
-               <span>НАЗАД</span>
-               <span>ВПЕРЕД</span>
+               <div>
+                  <button type="button">НАЗАД</button>
+                  <button type="button">ВПЕРЕД</button>
+               </div>
             </section>
          </div>
 
          <!-- Контактная информация и Запись -->
          <div class="content-container">
+            <h2 class="visually-hidden">Контактная информация и Запись</h2>
             <section>
                <h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
                <p>
@@ -99,13 +113,38 @@
                   ПН—ПТ: С 10:00 ДО 22:00<br>
                   СБ—ВС: С 10:00 ДО 19:00
                </p>
-               <a href="">КАК ПРОЕХАТЬ</a>
-               <a href="">ОБРАТНАЯ СВЯЗЬ</a>
+               <div>
+                  <a href="">КАК ПРОЕХАТЬ</a>
+                  <a href="">ОБРАТНАЯ СВЯЗЬ</a>
+               </div>
             </section>
 
             <section>
                <h3>ЗАПИСАТЬСЯ</h3>
                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+               <form action="https://echo.htmlacademy.ru" method="post">
+                  <div>
+                     <p>
+                        <label for="user-date">ДАТА</label>
+                        <input type="date" id="user-date" name="date">
+                     </p>
+                     <p>
+                        <label for="user-time">ВРЕМЯ</label>
+                        <input type="time" id="user-time" name="time">
+                     </p>
+                  </div>
+                  <div>
+                     <p>
+                        <label for="user-name">ВАШЕ ИМЯ</label>
+                        <input type="text" id="user-name" name="name" placeholder="Борода">
+                     </p>
+                     <p>
+                        <label for="user-tel">ТЕЛЕФОН</label>
+                        <input type="text" id="user-tel" name="tel" placeholder="+7 123 456-78-90">
+                     </p>
+                  </div>
+                  <button type="submit">ОТПРАВИТЬ</button>
+               </form>
             </section>
          </div>
       </div>
@@ -127,13 +166,19 @@
             <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
             <ul>
                <li>
-                  <a href="">Вконтакте</a>
+                  <a href="" aria-label="ВКонтакте">
+                     <<-Вставить svg код позже->>
+                  </a>
                </li>
                <li>
-                  <a href="">Фэйсбук</a>
+                  <a href="" aria-label="Фейсбук">
+                     <<-Вставить svg код позже->>
+                  </a>
                </li>
                <li>
-                  <a href="">Инстаграм</a>
+                  <a href="" aria-label="Инстаграм">
+                     <<-Вставить svg код позже->>
+                  </a>
                </li>
             </ul>
          </div>
