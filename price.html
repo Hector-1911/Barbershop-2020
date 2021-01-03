@@ -7,125 +7,170 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
+<body class="other-pages">
    <!-- Шапка -->
-   <header>
-      <h2 class="visually-hidden">Навигация по сайту</h2>
+   <header class="header">
       <div class="container">
-         <nav>
-            <a>
-               <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-            </a>
-            <ul>
-               <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-               <li><a href="news.html">НОВОСТИ</a></li>
-               <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
-               <li><a href="item.html">МАГАЗИН</a></li>
-               <li><a href="contacts.html">КОНТАКТЫ</a></li>
-            </ul>
-            <ul>
-               <li><a href="#">ВХОД</a></li>
-            </ul>
-         </nav>
-      </div>
-   </header>
-
-   <!-- Основной Контент -->
-   <main>
-      <div class="container">
-         <!-- Навигация -->
-         <section>
-            <h3>ПРАЙС-ЛИСТ</h3>
-            <nav>
-               <ul>
-                  <li>
-                     <a>ГЛАВНАЯ</a>
+         <div class="header-inner">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <!-- Логотип -->
+            <div class="logo-wrap">
+               <div class="logo">
+                  <a>
+                     <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+                  </a>
+               </div>
+            </div>
+            <!-- Навигация по сайту -->
+            <nav class="navigation">
+               <ul class="navigation__menu">
+                  <li class="navigation__item">
+                     <a class="navigation__link" href="info.html">ИНФОРМАЦИЯ</a>
                   </li>
-                  <li>
-                     <a>ПРАЙС-ЛИСТ</a>
+                  <li class="navigation__item">
+                     <a class="navigation__link" href="news.html">НОВОСТИ</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a class="navigation__link navigation__link--active" href="price.html">ПРАЙС-ЛИСТ</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a class="navigation__link" href="item.html">МАГАЗИН</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a class="navigation__link" href="contacts.html">КОНТАКТЫ</a>
                   </li>
                </ul>
             </nav>
-         </section>
-
-         <!-- Прайс-лист -->
-         <section>
-            <h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
-            <div>
-               <section>
-                  <h3>
-                     МЫ ИСПОЛЬЗУЕМ ТОЛЬКО
-                     ЛУЧШИЕ СРЕДСТВА:
-                  </h3>
-                  <ul>
-                     <li>Baxter of California</li>
-                     <li>Mr Natty</li>
-                     <li>Suavecito</li>
-                     <li>Malin+Goetz</li>
-                  </ul>
-                  <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
-                  <p>
-                     Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас -
-                     это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
-                  </p>
-               </section>
-
-               <section>
-                  <h3>
-                     ЦЕНЫ НА УСЛУГИ
-                     НАШИХ МАСТЕРОВ:
-                  </h3>
-                  <table></table>
-                  <p>
-                     Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время,
-                     даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя
-                     комфортно и свободно!
-                  </p>
-               </section>
+            <!-- Личный кабинет -->
+            <div class="login">
+               <ul class="login__menu">
+                  <li class="login__item">
+                     <a class="login__link" href="#">ВХОД</a>
+                  </li>
+               </ul>
             </div>
-         </section>
+         </div>
+      </div>
+   </header>
+   <!-- Основной Контент -->
+   <main class="main">
+      <div class="container">
+         <div class="other-navigation-wrap">
+            <section class="other-navigation">
+               <h2 class="other-navigation__title">ПРАЙС-ЛИСТ</h2>
+               <!-- Навигация -->
+               <nav class="page-navigation">
+                  <ul class="page-navigation__list">
+                     <li class="page-navigation__item">
+                        <a class="page-navigation__link" href="index.html">ГЛАВНАЯ</a>
+                     </li>
+                     <li class="page-navigation__item">
+                        <a class="page-navigation__link page-navigation__link--active">ПРАЙС-ЛИСТ</a>
+                     </li>
+                  </ul>
+               </nav>
+            </section>
+         </div>
+         <!-- Прайс-лист -->
+         <div class="price-list-wrap">
+            <section class="price-list">
+               <h2 class="price-list__title">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+               <div class="price-list__inner">
+                  <!-- О нас -->
+                  <section class="price-list__about-us">
+                     <h3 class="price-list__about-us-title">
+                        МЫ ИСПОЛЬЗУЕМ ТОЛЬКО
+                        ЛУЧШИЕ СРЕДСТВА:
+                     </h3>
+                     <ul class="price-list__about-us-list">
+                        <li class="price-list__about-us-item">Baxter of California</li>
+                        <li class="price-list__about-us-item">Mr Natty</li>
+                        <li class="price-list__about-us-item">Suavecito</li>
+                        <li class="price-list__about-us-item">Malin+Goetz</li>
+                     </ul>
+                     <h3 class="price-list__about-us-title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
+                     <p class="price-list__about-us-text">
+                        Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас
+                        -
+                        это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем
+                        качество.
+                     </p>
+                  </section>
+                  <!-- Наши услуги  -->
+                  <section class="price-list__services">
+                     <h3 class="price-list__services-title">
+                        ЦЕНЫ НА УСЛУГИ
+                        НАШИХ МАСТЕРОВ:
+                     </h3>
+                     <ul class="price-list__services-price">
+                        <li class="price-list__services-price-row">
+                           <span class="price-list__services-price-type">СТРИЖКА</span>
+                           <span class="price-list__services-price-cost">1500 ₽</span>
+                        </li>
+                        <li class="price-list__services-price-row">
+                           <span class="price-list__services-price-type">СТРИЖКА БОРОДЫ</span>
+                           <span class="price-list__services-price-cost">500 ₽</span>
+                        </li>
+                        <li class="price-list__services-price-row">
+                           <span class="price-list__services-price-type">НАКРУТКА УСОВ</span>
+                           <span class="price-list__services-price-cost">350 ₽</span>
+                        </li>
+                     </ul>
+                     <p class="price-list__services-text">
+                        Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое
+                        время,
+                        даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать
+                        себя
+                        комфортно и свободно!
+                     </p>
+                  </section>
+               </div>
+            </section>
+         </div>
       </div>
    </main>
-
    <!-- Подвал -->
-   <footer>
-      <div class="container footer-container">
-         <div>
-            <p>
-               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-            </p>
-            <a href="">КАК НАС НАЙТИ?</a>
-            <a href="tel:+74956660266">ТЕЛЕФОН: +7 (495) 666-02-66</a>
-         </div>
-
-         <div>
-            <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
-            <ul>
-               <li>
-                  <a href="" aria-label="ВКонтакте">
-                     <<-Вставить svg код позже->>
-                  </a>
-               </li>
-               <li>
-                  <a href="" aria-label="Фейсбук">
-                     <<-Вставить svg код позже->>
-                  </a>
-               </li>
-               <li>
-                  <a href="" aria-label="Инстаграм">
-                     <<-Вставить svg код позже->>
-                  </a>
-               </li>
-            </ul>
-         </div>
-
-         <div>
-            <span>РАЗРАБОТАНО:</span>
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-         </div>
+   <footer class="footer footer--shadow">
+      <div class="container">
+         <h2 class="visually-hidden">Подвал сайта</h2>
+         <section class="footer-inner">
+            <!-- Контактная информация -->
+            <div class="footer-contacts">
+               <p class="footer-contacts__text">
+                  БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                  АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+               </p>
+               <a class="footer-contacts__link" href="">КАК НАС НАЙТИ?</a>
+               <a class="footer-contacts__tel" href="tel:+74956660266">ТЕЛЕФОН: +7 (495) 666-02-66</a>
+            </div>
+            <!-- Социальные сети -->
+            <div class="social-networks">
+               <h4 class="social-networks__title">ДАВАЙТЕ ДРУЖИТЬ!</h4>
+               <ul class="social-networks__list">
+                  <li class="social-networks__item">
+                     <a class="social-networks__link" href="" aria-label="ВКонтакте">
+                        <<-Вставить svg код позже->>
+                     </a>
+                  </li>
+                  <li class="social-networks__item">
+                     <a class="social-networks__link" href="" aria-label="Фейсбук">
+                        <<-Вставить svg код позже->>
+                     </a>
+                  </li>
+                  <li class="social-networks__item">
+                     <a class="social-networks__link" href="" aria-label="Инстаграм">
+                        <<-Вставить svg код позже->>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <!-- Разработано -->
+            <div class="autors">
+               <span class="autors__title">РАЗРАБОТАНО:</span>
+               <a class="autors__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </div>
       </div>
+      </section>
    </footer>
 </body>
 
