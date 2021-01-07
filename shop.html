@@ -14,7 +14,7 @@
    <!-- Шапка -->
    <header class="header">
       <div class="container">
-         <div class="header-inner">
+         <div class="header__inner">
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <!-- Логотип -->
             <div class="logo-wrap">
@@ -28,50 +28,50 @@
             <nav class="navigation">
                <ul class="navigation__menu">
                   <li class="navigation__item">
-                     <a class="navigation__link" href="info.html">ИНФОРМАЦИЯ</a>
+                     <a class="navigation__link button" href="info.html">ИНФОРМАЦИЯ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="news.html">НОВОСТИ</a>
+                     <a class="navigation__link button" href="news.html">НОВОСТИ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="price.html">ПРАЙС-ЛИСТ</a>
+                     <a class="navigation__link button" href="price.html">ПРАЙС-ЛИСТ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link navigation__link--active" href="item.html">МАГАЗИН</a>
+                     <a class="navigation__link navigation__link--active button" href="item.html">МАГАЗИН</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="contacts.html">КОНТАКТЫ</a>
+                     <a class="navigation__link button" href="contacts.html">КОНТАКТЫ</a>
                   </li>
                </ul>
+               <!-- Личный кабинет -->
+               <div class="login">
+                  <ul class="login__menu">
+                     <li class="login__item">
+                        <a class="login__link button" href="#">ВХОД</a>
+                     </li>
+                  </ul>
+               </div>
             </nav>
-            <!-- Личный кабинет -->
-            <div class="login">
-               <ul class="login__menu">
-                  <li class="login__item">
-                     <a class="login__link" href="#">ВХОД</a>
-                  </li>
-               </ul>
-            </div>
          </div>
       </div>
    </header>
    <!-- Основной Контент -->
    <main class="main">
       <div class="container">
-         <div class="other-navigation-wrap">
-            <section class="other-navigation">
-               <h2 class="other-navigation__title">СРЕДСТВА ДЛЯ УХОДА</h2>
+         <div class="breadcrumbs-wrap">
+            <section class="breadcrumbs">
+               <h2 class="breadcrumbs__title">СРЕДСТВА ДЛЯ УХОДА</h2>
                <!-- Навигация -->
-               <nav class="page-navigation">
-                  <ul class="page-navigation__list">
-                     <li class="page-navigation__item">
-                        <a class="page-navigation__link" href="index.html">ГЛАВНАЯ</a>
+               <nav class="breadcrumbs-nav">
+                  <ul class="breadcrumbs-nav__list">
+                     <li class="breadcrumbs-nav__item">
+                        <a class="breadcrumbs-nav__link" href="index.html">ГЛАВНАЯ</a>
                      </li>
-                     <li class="page-navigation__item">
-                        <a class="page-navigation__link" href="shop.html">МАГАЗИН</a>
+                     <li class="breadcrumbs-nav__item">
+                        <a class="breadcrumbs-nav__link" href="shop.html">МАГАЗИН</a>
                      </li>
-                     <li class="page-navigation__item">
-                        <a class="page-navigation__link page-navigation__link--active">СРЕДСТВА ДЛЯ УХОДА</a>
+                     <li class="breadcrumbs-nav__item">
+                        <a class="breadcrumbs-nav__link breadcrumbs-nav__link--active">СРЕДСТВА ДЛЯ УХОДА</a>
                      </li>
                   </ul>
                </nav>
@@ -153,7 +153,7 @@
                         </ul>
                      </fieldset>
                   </div>
-                  <button class="filter__button" type="submit">Показать</button>
+                  <button class="filter__button button" type="submit">Показать</button>
                </form>
             </section>
             <!-- Каталог -->
@@ -170,7 +170,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">2 900 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                   <li class="catalog__item">
@@ -183,7 +183,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">750 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                   <li class="catalog__item">
@@ -196,7 +196,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">290 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                   <li class="catalog__item">
@@ -209,7 +209,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">500 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                   <li class="catalog__item">
@@ -222,7 +222,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">300 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                   <li class="catalog__item">
@@ -235,7 +235,7 @@
                      </a>
                      <div class="catalog__price">
                         <span class="catalog__cost">3 900 ₽</span>
-                        <button class="catalog__btn" type="button">КУПИТЬ</button>
+                        <button class="catalog__btn button" type="button">КУПИТЬ</button>
                      </div>
                   </li>
                </ul>
@@ -244,16 +244,16 @@
                   <div class="paginator">
                      <ul class="paginator__list">
                         <li class="paginator__item">
-                           <button class="paginator__btn">1</a>
+                           <button class="paginator__btn button">1</a>
                         </li>
                         <li class="paginator__item">
-                           <button class="paginator__btn paginator__btn--active">2</a>
+                           <button class="paginator__btn paginator__btn--active button">2</a>
                         </li>
                         <li class="paginator__item">
-                           <button class="paginator__btn">3</a>
+                           <button class="paginator__btn button">3</a>
                         </li>
                         <li class="paginator__item">
-                           <button class="paginator__btn">4</a>
+                           <button class="paginator__btn button">4</a>
                         </li>
                      </ul>
                   </div>
@@ -263,7 +263,7 @@
       </div>
    </main>
    <!-- Подвал -->
-   <footer class="footer footer--shadow">
+   <footer class="footer">
       <div class="container">
          <h2 class="visually-hidden">Подвал сайта</h2>
          <section class="footer-inner">
@@ -278,20 +278,20 @@
             </div>
             <!-- Социальные сети -->
             <div class="social-networks">
-               <h4 class="social-networks__title">ДАВАЙТЕ ДРУЖИТЬ!</h4>
+               <span class="social-networks__title">ДАВАЙТЕ ДРУЖИТЬ!</span>
                <ul class="social-networks__list">
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="ВКонтакте">
+                     <a class="social-networks__link button" href="" aria-label="ВКонтакте">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="Фейсбук">
+                     <a class="social-networks__link button" href="" aria-label="Фейсбук">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="Инстаграм">
+                     <a class="social-networks__link button" href="" aria-label="Инстаграм">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
@@ -300,7 +300,7 @@
             <!-- Разработано -->
             <div class="autors">
                <span class="autors__title">РАЗРАБОТАНО:</span>
-               <a class="autors__link" href="https://htmlacademy.ru">HTML Academy</a>
+               <a class="autors__link button" href="https://htmlacademy.ru">HTML Academy</a>
             </div>
       </div>
       </section>

@@ -14,36 +14,36 @@
    <!-- Шапка -->
    <header class="header">
       <div class="container">
-         <div class="header-inner">
+         <div class="header__inner">
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <!-- Навигация по сайту -->
             <nav class="navigation">
                <ul class="navigation__menu">
                   <li class="navigation__item">
-                     <a class="navigation__link" href="info.html">ИНФОРМАЦИЯ</a>
+                     <a class="navigation__link button" href="info.html">ИНФОРМАЦИЯ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="news.html">НОВОСТИ</a>
+                     <a class="navigation__link button" href="news.html">НОВОСТИ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="price.html">ПРАЙС-ЛИСТ</a>
+                     <a class="navigation__link button" href="price.html">ПРАЙС-ЛИСТ</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="item.html">МАГАЗИН</a>
+                     <a class="navigation__link button" href="item.html">МАГАЗИН</a>
                   </li>
                   <li class="navigation__item">
-                     <a class="navigation__link" href="contacts.html">КОНТАКТЫ</a>
+                     <a class="navigation__link button" href="contacts.html">КОНТАКТЫ</a>
                   </li>
                </ul>
+               <!-- Личный кабинет -->
+               <div class="login">
+                  <ul class="login__menu">
+                     <li class="login__item">
+                        <a class="login__link button" href="#">ВХОД</a>
+                     </li>
+                  </ul>
+               </div>
             </nav>
-            <!-- Личный кабинет -->
-            <div class="login">
-               <ul class="login__menu">
-                  <li class="login__item">
-                     <a class="login__link" href="#">ВХОД</a>
-                  </li>
-               </ul>
-            </div>
             <!-- Логотип -->
             <div class="main-logo-wrap">
                <div class="main-logo">
@@ -90,7 +90,7 @@
             </section>
          </div>
          <!-- Новости и Галерея -->
-         <div class="content-container">
+         <div class="index-columns">
             <h2 class="visually-hidden">Новости и Галерея</h2>
             <!-- Новости -->
             <section class="news">
@@ -112,7 +112,7 @@
                      <time class="news__time" datetime="2019-1-18">18 января</time>
                   </li>
                </ul>
-               <a class="news__link" href="">ВСЕ НОВОСТИ</a>
+               <a class="news__link button" href="">ВСЕ НОВОСТИ</a>
             </section>
             <!-- Фотогалерея -->
             <section class="gallery">
@@ -123,13 +123,13 @@
                   </a>
                </div>
                <div class="gallery__btn-wrap">
-                  <button class="gallery__btn" type="button">НАЗАД</button>
-                  <button class="gallery__btn" type="button">ВПЕРЕД</button>
+                  <button class="gallery__btn button" type="button">НАЗАД</button>
+                  <button class="gallery__btn button" type="button">ВПЕРЕД</button>
                </div>
             </section>
          </div>
          <!-- Контактная информация и Запись -->
-         <div class="content-container">
+         <div class="index-columns">
             <h2 class="visually-hidden">Контактная информация и Запись</h2>
             <!-- Контактная информация -->
             <section class="contacts">
@@ -145,8 +145,8 @@
                   СБ—ВС: С 10:00 ДО 19:00
                </p>
                <div class="contacts__btn-wrap">
-                  <a class="contacts__btn" href="">КАК ПРОЕХАТЬ</a>
-                  <a class="contacts__btn" href="">ОБРАТНАЯ СВЯЗЬ</a>
+                  <a class="contacts__btn button" href="">КАК ПРОЕХАТЬ</a>
+                  <a class="contacts__btn button" href="">ОБРАТНАЯ СВЯЗЬ</a>
                </div>
             </section>
             <!-- Форма записи -->
@@ -172,7 +172,7 @@
                      <label for="user-tel">ТЕЛЕФОН</label>
                      <input type="text" id="user-tel" name="tel" placeholder="+7 123 456-78-90">
                   </p>
-                  <button class="form__btn" type="submit">ОТПРАВИТЬ</button>
+                  <button class="form__btn button" type="submit">ОТПРАВИТЬ</button>
                </form>
             </section>
          </div>
@@ -194,20 +194,20 @@
             </div>
             <!-- Социальные сети -->
             <div class="social-networks">
-               <h4 class="social-networks__title">ДАВАЙТЕ ДРУЖИТЬ!</h4>
+               <span class="social-networks__title">ДАВАЙТЕ ДРУЖИТЬ!</span>
                <ul class="social-networks__list">
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="ВКонтакте">
+                     <a class="social-networks__link button" href="" aria-label="ВКонтакте">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="Фейсбук">
+                     <a class="social-networks__link button" href="" aria-label="Фейсбук">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
                   <li class="social-networks__item">
-                     <a class="social-networks__link" href="" aria-label="Инстаграм">
+                     <a class="social-networks__link button" href="" aria-label="Инстаграм">
                         <<-Вставить svg код позже->>
                      </a>
                   </li>
@@ -216,11 +216,44 @@
             <!-- Разработано -->
             <div class="autors">
                <span class="autors__title">РАЗРАБОТАНО:</span>
-               <a class="autors__link" href="https://htmlacademy.ru">HTML Academy</a>
+               <a class="autors__link button" href="https://htmlacademy.ru">HTML Academy</a>
             </div>
       </div>
       </section>
    </footer>
+   <!-- Модальные окна -->
+   <!-- Личный кабинет -->
+   <div class="modal-login__wrap">
+      <section class="modal-login">
+         <h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+         <p class="modal-login__text">ВВедите пожалуйста свой логин и пароль</p>
+         <form class="modal-login__form" action="" method="post">
+            <p class="modal-login__row">
+               <label for="login" aria-label="Логин"></label>
+               <input name="login" type="text" id="login" placeholder="ЛОГИН">
+            </p>
+            <p class="modal-login__row">
+               <label for="password" aria-label="Пароль"></label>
+               <input name="password" type="text" id="password" placeholder="ПАРОЛЬ">
+            </p>
+            <p class="modal-login__row">
+               <label for="remember">Запомнить меня</label>
+               <input name="remember" type="checkbox" id="remember">
+               <a href="" class="modal-login__miss-pass">Я ЗАБЫЛ ПАРОЛЬ!</a>
+            </p>
+            <button class="modal-login__submit button" type="submit">ВОЙТИ</button>
+         </form>
+         <button class="popup__close-btn"></button>
+      </section>
+   </div>
+   <!-- Карта -->
+   <div class="modal-map__wrap">
+      <section class="modal-map">
+         <h2 class="visually-hidden">Карта</h2>
+         <div class="modal-map__map"></div>
+         <button class="modal-map__close-btn"></button>
+      </section>
+   </div>
 </body>
 
 </html>

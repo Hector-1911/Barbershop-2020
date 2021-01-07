@@ -1,8 +1,7 @@
-/* Глобальные стили */
+/* --Глобальные стили-- */
 *, *::before, *::after {
    box-sizing: inherit;
 }
-
 html {
    box-sizing: border-box;
 }
@@ -33,5 +32,419 @@ a {
    text-decoration: none;
 }
 
-/* Стили помошники */
+.button {
+   font: inherit;
+
+   text-align: center;
+   vertical-align: middle;
+   color: #fff;
+   text-transform: uppercase;
+   
+   background-color: #000;
+   border: none;
+}
+
+/* --Стили помошники-- */
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* ----- */
+
+/* --Главная страница-- */
+
+/* -Шапка- */
+.header {
+   background-color: #000;
+}
+
+/* Навигация */
+.navigation {
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.navigation__menu {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Личный кабинет */
+.login__menu {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* -Основной контент- */
+
+/* Преимущества */
+.advantages__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.advantages__item {
+   text-align: center;
+}
+
+.advantages__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+/* Контейнер контента */
+.index-columns {
+   background-color: #f9f6f3;
+}
+
+/* Новости и галереея */
+
+/* Новости */
+.news {
+   color: #000;
+}
+
+.news__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+.news__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.news__time {
+   text-transform: lowercase;
+}
+
+/* Галерея */
+.gallery {
+   color: #000;
+}
+
+.gallery__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+.gallery__photo {
+   background-color: #e5e5e5;
+   border: 7px solid #fff;
+}
+
+/* Контактная информация и Запись */
+
+/* Контактная информация */
+.contacts {
+   color: #000;
+}
+
+.contacts__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+.contacts__tel {
+   color: #000;
+}
+
+/* Записи */
+.appointment {
+   color: #000;
+}
+
+.appointment__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+/* Форма записи */
+.form input {
+   font: inherit;
+
+   color: #000;
+
+   border: 2px solid #000;
+}
+
+/* -Подвал- */
+.footer {
+   background-color: #232323;
+}
+
+/* Контактная информация */
+.footer-contacts__link {
+   color: #fff;
+
+   text-decoration: underline;
+}
+
+.footer-contacts__tel {
+   color: #fff;
+}
+
+/* Социальные сети */
+.social-networks {
+   text-align: center;
+}
+
+.social-networks__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Разработано */
+.autors {
+   text-align: center;
+}
+
+/* ----- */
+
+/* --Страница товара-- */
+
+/* -Основной контент- */
+.other-pages main {
+   background-color: #f9f6f3;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+   color: #000;
+}
+
+.breadcrumbs__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+.breadcrumbs-nav__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.breadcrumbs-nav__link {
+   color: #000;
+}
+
+.breadcrumbs-nav__link--active {
+   color: rgba(0, 0, 0, 0.4);
+}
+
+/* Информация о товаре */
+.product {
+   color: #000;
+}
+
+/* Превью товара */
+.product__preview-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Описание товара */
+.product__desc-info-article {
+   color: rgba(0, 0, 0, 0.4);
+}
+
+.product__desc-cost {
+   text-align: center;
+   vertical-align: middle;
+
+   background-color: #e5e5e5;
+}
+
+.product__desc-subtitle {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.product__desc-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* ----- */
+
+/* --Страница услуг-- */
+
+/* Прайс-лист */
+.price-list {
+   color: #000;
+}
+
+.price-list__title {
+   font-size: 48px;
+   line-height: 48px;
+}
+
+/* О нас */
+.price-list__about-us-title {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.price-list__about-us-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.price-list__about-us-title {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+/* Наши услуги */
+.price-list__services-title {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.price-list__services-price {
+   padding: 0;
+
+   list-style: none;
+}
+
+.price-list__services-price-type {
+   vertical-align: middle;
+}
+
+.price-list__services-price-cost {
+   text-align: center;
+   vertical-align: middle;
+}
+
+/* ----- */
+
+/* --Страница каталога-- */
+.breadcrumbs-nav__link {
+   line-height: 20px;
+}
+
+/* Фильтр */
+.filter {
+   line-height: 18px;
+   color: #000;
+}
+
+/* Производители */
+.filter__manufacturers {
+   border: none;
+}
+
+.filter__manufacturers-title {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.filter__manufacturers-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Группа товаров */
+.filter__products {
+   border: none;
+}
+
+.filter__products-title {
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.filter__products-list {
+   padding: 0;
+
+   list-style: none;
+}
+
+/* Каталог */
+.catalog {
+   color: #000;
+}
+
+.catalog__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.catalog__link {
+   color: #000;
+}
+
+.catalog__text {
+   text-transform: lowercase;
+}
+
+.catalog__cost {
+   text-align: center;
+   vertical-align: middle;
+
+   background-color: #e5e5e5;
+}
+
+/* Пагинатор */
+.paginator__list {
+   padding: 0;
+
+   list-style: none;
+}
+
+.paginator__btn--active {
+   color: #000;
+
+   background-color: #fff;
+}
+
+/* ----- */
+
+/* --Модальные окна-- */
+
+/* -Главная страница- */
+
+/* Личный кабинет */
+.modal-login {
+   color: #000;
+
+   background-color: #f9f6f3;
+}
+
+.modal-login__title {
+   font-size: 30px;
+   line-height: 42px;
+}
+
+.modal-login__row input[name="login"],
+.modal-login__row input[name="password"] {
+   font: inherit;
+
+   border: 2px solid #000;
+}
+
+.modal-login__miss-pass {
+   color: #000;
+
+   text-decoration: underline;
+}
+
+/* Карта */
 
